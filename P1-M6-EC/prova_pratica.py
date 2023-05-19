@@ -30,6 +30,9 @@ class MissionControl(deque):
     def dequeue(self): # Para remover da fila
         return super().popleft()
 
+    def pop(self): # Para remover o último elemento na pilha (útil para fazer a tartaruga retornar ao ponto inicial)
+        return super().pop()
+
 # Classe que contém os métodos referentes à manipulação dos movimentos da tartaruga
 class Pose(TPose):
 
@@ -59,8 +62,8 @@ class TurtleController(Node): # Classe que herda de Node. É um nó do ROS.
     # Criando o construtor da classe superior
     def __init__(self, mission_control, control_period=0.02): # O período de controle é o tempo que o programa vai esperar para executar o callback novamente. No caso, 2 milissegundos
         super().__init__('turtle_controller')
-        self.pose = Pose(x=-40.0)
-        self.setpoint = Pose(x=-40.0) # É um valor relativo à pose atual, para facilitar o controle do sistema
+        self.pose = Pose(x=0.0)
+        self.setpoint = Pose(x=0.0) # É um valor relativo à pose atual, para facilitar o controle do sistema
         self.mission_control = mission_control
         self.publisher = self.create_publisher(
             msg_type=Twist,
@@ -87,7 +90,7 @@ class TurtleController(Node): # Classe que herda de Node. É um nó do ROS.
     def publisher_callback(self):
 
         # Verificar se já existem informações publicadas de Pose
-        if self.pose.x == -40.0:
+        if self.pose.x == 0.0:
             self.get_logger().info("Aguardando primeira pose...")
             return
         
@@ -123,7 +126,7 @@ class TurtleController(Node): # Classe que herda de Node. É um nó do ROS.
 
     def subscriber_callback(self, msg): # Método chamado quando uma mensagem é recebida no tópico
         self.pose = Pose(x=msg.x, y=msg.y, theta=msg.theta)
-        if self.setpoint.x == -40.0: # Na primeira vez que se realiza o callback, percebe-se que ainda não foi definido o setpoint
+        if self.setpoint.x == 0.0: # Na primeira vez que se realiza o callback, percebe-se que ainda não foi definido o setpoint
             self.update_setpoint()
         self.get_logger().info(f"A tartaruga está em x={msg.x}, y={msg.y}, theta={msg.theta}")
 
