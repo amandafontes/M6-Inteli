@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/gazebo_simulation/gazebo_simulation.egg-info/PKG-INFO
+writing dependency_links to ../../build/gazebo_simulation/gazebo_simulation.egg-info/dependency_links.txt
+writing entry points to ../../build/gazebo_simulation/gazebo_simulation.egg-info/entry_points.txt
+writing requirements to ../../build/gazebo_simulation/gazebo_simulation.egg-info/requires.txt
+writing top-level names to ../../build/gazebo_simulation/gazebo_simulation.egg-info/top_level.txt
+reading manifest file '../../build/gazebo_simulation/gazebo_simulation.egg-info/SOURCES.txt'
+writing manifest file '../../build/gazebo_simulation/gazebo_simulation.egg-info/SOURCES.txt'
+running build
+running build_py
+copying gazebo_simulation/__init__.py -> /home/amandafontes/M6/M6-Inteli-Robot-Simulation/gazebo_simulation/ros2_workspace/build/gazebo_simulation/build/lib/gazebo_simulation
+running install
+running install_lib
+copying /home/amandafontes/M6/M6-Inteli-Robot-Simulation/gazebo_simulation/ros2_workspace/build/gazebo_simulation/build/lib/gazebo_simulation/__init__.py -> /home/amandafontes/M6/M6-Inteli-Robot-Simulation/gazebo_simulation/ros2_workspace/install/gazebo_simulation/lib/python3.10/site-packages/gazebo_simulation
+byte-compiling /home/amandafontes/M6/M6-Inteli-Robot-Simulation/gazebo_simulation/ros2_workspace/install/gazebo_simulation/lib/python3.10/site-packages/gazebo_simulation/__init__.py to __init__.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/amandafontes/M6/M6-Inteli-Robot-Simulation/gazebo_simulation/ros2_workspace/install/gazebo_simulation/lib/python3.10/site-packages/gazebo_simulation-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/gazebo_simulation/gazebo_simulation.egg-info to /home/amandafontes/M6/M6-Inteli-Robot-Simulation/gazebo_simulation/ros2_workspace/install/gazebo_simulation/lib/python3.10/site-packages/gazebo_simulation-0.0.0-py3.10.egg-info
+running install_scripts
+Installing atividade_gazebo script to /home/amandafontes/M6/M6-Inteli-Robot-Simulation/gazebo_simulation/ros2_workspace/install/gazebo_simulation/lib/gazebo_simulation
+writing list of installed files to '/home/amandafontes/M6/M6-Inteli-Robot-Simulation/gazebo_simulation/ros2_workspace/build/gazebo_simulation/install.log'

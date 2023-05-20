@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+../../build/gazebo_simulation/gazebo_simulation.egg-info/PKG-INFO
+../../build/gazebo_simulation/gazebo_simulation.egg-info/SOURCES.txt
+../../build/gazebo_simulation/gazebo_simulation.egg-info/dependency_links.txt
+../../build/gazebo_simulation/gazebo_simulation.egg-info/entry_points.txt
+../../build/gazebo_simulation/gazebo_simulation.egg-info/requires.txt
+../../build/gazebo_simulation/gazebo_simulation.egg-info/top_level.txt
+../../build/gazebo_simulation/gazebo_simulation.egg-info/zip-safe
+gazebo_simulation/__init__.py
+resource/gazebo_simulation
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

@@ -1,0 +1,3 @@
+[console_scripts]
+atividade_gazebo = gazebo_simulation:main
+

@@ -1,0 +1,32 @@
+running egg_info
+creating ../../build/gazebo_simulation/gazebo_simulation.egg-info
+writing ../../build/gazebo_simulation/gazebo_simulation.egg-info/PKG-INFO
+writing dependency_links to ../../build/gazebo_simulation/gazebo_simulation.egg-info/dependency_links.txt
+writing entry points to ../../build/gazebo_simulation/gazebo_simulation.egg-info/entry_points.txt
+writing requirements to ../../build/gazebo_simulation/gazebo_simulation.egg-info/requires.txt
+writing top-level names to ../../build/gazebo_simulation/gazebo_simulation.egg-info/top_level.txt
+writing manifest file '../../build/gazebo_simulation/gazebo_simulation.egg-info/SOURCES.txt'
+reading manifest file '../../build/gazebo_simulation/gazebo_simulation.egg-info/SOURCES.txt'
+writing manifest file '../../build/gazebo_simulation/gazebo_simulation.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/amandafontes/M6/M6-Inteli-Robot-Simulation/gazebo_simulation/ros2_workspace/build/gazebo_simulation/build
+creating /home/amandafontes/M6/M6-Inteli-Robot-Simulation/gazebo_simulation/ros2_workspace/build/gazebo_simulation/build/lib
+creating /home/amandafontes/M6/M6-Inteli-Robot-Simulation/gazebo_simulation/ros2_workspace/build/gazebo_simulation/build/lib/gazebo_simulation
+copying gazebo_simulation/__init__.py -> /home/amandafontes/M6/M6-Inteli-Robot-Simulation/gazebo_simulation/ros2_workspace/build/gazebo_simulation/build/lib/gazebo_simulation
+running install
+running install_lib
+creating /home/amandafontes/M6/M6-Inteli-Robot-Simulation/gazebo_simulation/ros2_workspace/install/gazebo_simulation/lib/python3.10/site-packages/gazebo_simulation
+copying /home/amandafontes/M6/M6-Inteli-Robot-Simulation/gazebo_simulation/ros2_workspace/build/gazebo_simulation/build/lib/gazebo_simulation/__init__.py -> /home/amandafontes/M6/M6-Inteli-Robot-Simulation/gazebo_simulation/ros2_workspace/install/gazebo_simulation/lib/python3.10/site-packages/gazebo_simulation
+byte-compiling /home/amandafontes/M6/M6-Inteli-Robot-Simulation/gazebo_simulation/ros2_workspace/install/gazebo_simulation/lib/python3.10/site-packages/gazebo_simulation/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/amandafontes/M6/M6-Inteli-Robot-Simulation/gazebo_simulation/ros2_workspace/install/gazebo_simulation/share/ament_index
+creating /home/amandafontes/M6/M6-Inteli-Robot-Simulation/gazebo_simulation/ros2_workspace/install/gazebo_simulation/share/ament_index/resource_index
+creating /home/amandafontes/M6/M6-Inteli-Robot-Simulation/gazebo_simulation/ros2_workspace/install/gazebo_simulation/share/ament_index/resource_index/packages
+copying resource/gazebo_simulation -> /home/amandafontes/M6/M6-Inteli-Robot-Simulation/gazebo_simulation/ros2_workspace/install/gazebo_simulation/share/ament_index/resource_index/packages
+copying package.xml -> /home/amandafontes/M6/M6-Inteli-Robot-Simulation/gazebo_simulation/ros2_workspace/install/gazebo_simulation/share/gazebo_simulation
+running install_egg_info
+Copying ../../build/gazebo_simulation/gazebo_simulation.egg-info to /home/amandafontes/M6/M6-Inteli-Robot-Simulation/gazebo_simulation/ros2_workspace/install/gazebo_simulation/lib/python3.10/site-packages/gazebo_simulation-0.0.0-py3.10.egg-info
+running install_scripts
+Installing atividade_gazebo script to /home/amandafontes/M6/M6-Inteli-Robot-Simulation/gazebo_simulation/ros2_workspace/install/gazebo_simulation/lib/gazebo_simulation
+writing list of installed files to '/home/amandafontes/M6/M6-Inteli-Robot-Simulation/gazebo_simulation/ros2_workspace/build/gazebo_simulation/install.log'
