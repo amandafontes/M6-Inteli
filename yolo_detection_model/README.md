@@ -7,4 +7,3 @@
 <h3>Demonstração</h3>
 
 https://github.com/amandafontes/M6-Inteli-Robot-Simulation/assets/77015911/3bf783b8-58fa-4e5a-90e9-83e31496216a
-
