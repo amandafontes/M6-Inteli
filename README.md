@@ -2,7 +2,7 @@
 
 <p>O presente repositório destina-se às atividades relacionadas ao sexto módulo do curso de Engenharia da Computação do Inteli.</p>
 
-<h3>Organização de diretórios</h3>
+<h3>Organização de diretórios</h3><br>
 
 <li><a href="https://github.com/amandafontes/M6-Inteli-Robot-Simulation/tree/main/P1-M6-EC"><code>P1-M6-EC</code></a>&nbsp;&nbsp;&nbsp;Atividade prática da primeira prova do módulo.<br>
   <p><b>Descrição:</b> construção de ambiente simulado no Turtlesim, utilizando estruturas de dados para concretizar a movimentação da tartaruga através de uma rota pré-definida.</p>
