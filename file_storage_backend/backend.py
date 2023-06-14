@@ -1,10 +1,10 @@
 import os # Biblioteca para manipulação de arquivos
 import time # Biblioteca para capturar o tempo em que a imagem é enviada
 import ultralytics # Biblioteca para o modelo de visão computacional aplicado às imagens
-from ultralytics import YOLO # Biblioteca para aplicação do modelo YOLO
-from flask import Flask, request, render_template # Biblioteca para criar o servidor em Flask
-from supabase import create_client, Client # Biblioteca para conectar no supabase
 from shutil import rmtree # Biblioteca para remoção de diretórios temporários
+from ultralytics import YOLO # Biblioteca para aplicação do modelo YOLO
+from supabase import create_client, Client # Biblioteca para conectar no supabase
+from flask import Flask, request, render_template # Biblioteca para criar o servidor em Flask
 
 # Cria o servidor
 app = Flask(__name__) 
