@@ -8,7 +8,7 @@
 
 <p>Abaixo, encontra-se um vídeo demonstrativo do artefato em funcionamento. No teste realizado, foi feito o upload de uma imagem por meio da interface criada. A imagem em questão foi recebida pelo backend, armazenada temporariamente, submetida ao modelo de detecção de objetos e, por fim, enviada a um bucket do Supabase. Ao acessar o bucket, é possível visualizar as imagens enviadas para o gerenciador de arquivos, posteriormente ao processamento realizado pelo modelo.</p>
 
-*vídeo_demonstrativo*
+https://github.com/amandafontes/M6-Inteli-Robot-Simulation/assets/77015911/bb48f463-140d-488f-9eca-af7231c39304
 
 <h3>Implementação</h3>
 
@@ -18,19 +18,19 @@
 
 <p>A fim de possibilitar o upload de imagens para processamento e envio ao bucket, foi criada uma interface simples em <code>html</code>. Posteriormente, será possível visualizar o mecanismo utilizado para capturar a imagem no backend.</p>
 
-<p align="center"><img src="https://github.com/amandafontes/M6-Inteli-Robot-Simulation/blob/main/file_storage_backend/code_documentation/html.png?raw=true" width=75%></img></p>
+<p align="center"><img src="https://github.com/amandafontes/M6-Inteli-Robot-Simulation/blob/main/file_storage_backend/media/html.png?raw=true" width=75%></img></p>
 
 <h4>Importações necessárias</h4>
 
 <p>O código produzido depende de algumas bibliotecas que são de fundamental importância para sua execução: <code>os</code>, para manipulação de arquivos, <code>time</code>, para a captura de tempo que compõe o nome dos arquivos, e <code>ultralytics</code> para a obtenção do modelo de visão computacional utilizado. Além disso, foram utilizados os módulos <code>rmtree</code>, para a remoção de diretórios temporários (seu uso será melhor evidenciado posteriormente), <code>YOLO</code>, que configura o modelo de detecção de objetos aplicado às imagens recebidas e <code>create_client</code> e <code>Client</code> para o setup correto do Supabase. Por fim, <code>Flask</code>, <code>request</code> e <code>render_template</code> foram importados a fim de configurar o servidor e as rotas.</p>
 
-<p align="center"><img src="https://github.com/amandafontes/M6-Inteli-Robot-Simulation/blob/main/file_storage_backend/code_documentation/imports.png?raw=true" width=75%></img></p>
+<p align="center"><img src="https://github.com/amandafontes/M6-Inteli-Robot-Simulation/blob/main/file_storage_backend/media/imports.png?raw=true" width=75%></img></p>
 
 <h4>Configuração do servidor e do Supabase</h4>
 
 <p>Primeiramente, inicializamos a aplicação em Flask. Posteriormente, definem-se <code>url</code>, o endereço para o projeto no Supabase, e a <code>key</code>, chave de acesso ao projeto. Na linha abaixo, inicializamos o Supabase client, de modo a possibilitar a interação entre a aplicação e o ecossistema do file storage. Por fim, atribuímos a <code>bucket_name</code> o nome do bucket criado.</p>
 
-<p align="center"><img src="https://github.com/amandafontes/M6-Inteli-Robot-Simulation/blob/main/file_storage_backend/code_documentation/setup.png?raw=true" width=75%></img></p>
+<p align="center"><img src="https://github.com/amandafontes/M6-Inteli-Robot-Simulation/blob/main/file_storage_backend/media/setup.png?raw=true" width=75%></img></p>
 
 <h4>Criação da rota e tratamento inicial da imagem recebida</h4>
 
@@ -38,7 +38,7 @@
 
 <p>Considerando que, antes de ser submetida ao modelo de detecção de objetos, a imagem deve ser armazenada temporariamente, o comando <code>os.makedirs</code> estabelece a criação de um diretório para seu armazenamento. Por fim, a imagem, inicialmente tratada, é salva em seu respectivo caminho, para enfim passar pelo processamento do modelo de visão computacional do Yolo.</p>
 
-<p align="center"><img src="https://github.com/amandafontes/M6-Inteli-Robot-Simulation/blob/main/file_storage_backend/code_documentation/route.png?raw=true" width=75%></img></p>
+<p align="center"><img src="https://github.com/amandafontes/M6-Inteli-Robot-Simulation/blob/main/file_storage_backend/media/route.png?raw=true" width=75%></img></p>
 
 <h4>Aplicação do modelo de visão computacional</h4>
 
@@ -48,7 +48,7 @@
 
 <p>O método <code>rmtree</code>, posteriormente ao upload da imagem processada no file storage, é executado sobre os diretórios responsáveis pelo armazenamento temporário da imagem. Desse modo, a imagem é guardada no bucket, mas o ambiente em que se encontra o script se torna livre do arquivo.</p>
 
-<p align="center"><img src="https://github.com/amandafontes/M6-Inteli-Robot-Simulation/blob/main/file_storage_backend/code_documentation/prediction.png?raw=true" width=75%></img></p>
+<p align="center"><img src="https://github.com/amandafontes/M6-Inteli-Robot-Simulation/blob/main/file_storage_backend/media/prediction.png?raw=true" width=75%></img></p>
 
 <h4>Verificação do envio da imagem</h4>
 
@@ -56,4 +56,4 @@
 
 <p>O retorno da página de upload via <code>render_template</code> fecha a rota e, por fim, a aplicação é devidamente inicializada.</p>
 
-<p align="center"><img src="https://github.com/amandafontes/M6-Inteli-Robot-Simulation/blob/main/file_storage_backend/code_documentation/status.png?raw=true" width=75%></img></p>
+<p align="center"><img src="https://github.com/amandafontes/M6-Inteli-Robot-Simulation/blob/main/file_storage_backend/media/status.png?raw=true" width=75%></img></p>
