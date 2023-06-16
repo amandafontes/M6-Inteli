@@ -8,6 +8,10 @@
   <p><b>Descrição:</b> construção de ambiente simulado no Turtlesim, utilizando estruturas de dados para concretizar a movimentação da tartaruga através de uma rota pré-definida.</p>
 <br>
 
+<li><a href="https://github.com/amandafontes/M6-Inteli-Robot-Simulation/tree/main/P2-M6-EC"><code>P2-M6-EC</code></a>&nbsp;&nbsp;&nbsp;Atividade prática da segunda prova do módulo.<br>
+  <p><b>Descrição:</b> construção de script para detecção facial em um vídeo, utilizando OpenCV.</p>
+<br>
+
 <li><a href="https://github.com/amandafontes/M6-Inteli-Robot-Simulation/tree/main/assessment_studies"><code>assessment_studies</code></a>&nbsp;&nbsp;&nbsp;Estudos para as provas do módulo.<br>
     <p><b>Descrição:</b> diretório para armazenamento de códigos importantes para o processo de estudos para as provas do módulo.</p>
   <br>
