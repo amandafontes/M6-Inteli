@@ -19,7 +19,7 @@ if camera.isOpened():
 
         annotated_frame = detection[0].plot() # Guardando o frame com as detecções
 
-        detection = model.predict(frame, conf=0.8, stream=True) # Realizando a predição do modelo no frame
+        detection = model.predict(frame, stream=True) # Realizando a predição do modelo no frame
 
         # Desenhando a caixa delimitadora
         for result in detection:
@@ -33,17 +33,17 @@ if camera.isOpened():
 
                 cv.rectangle(frame, r[:2], r[2:], (150, 55, 200), 2) # Desenhando o retângulo no frame
 
-            # Definindo a fonte e escrevendo o nome do objeto detectado
-            font = cv.FONT_HERSHEY_DUPLEX
-            cv.putText(
-                frame,
-                result.names[int(box.cls[0])],
-                (r[0] + 6, r[1] - 20),
-                font,
-                1.0,
-                (0, 0, 0),
-                1,
-            )
+                # Definindo a fonte e escrevendo o nome do objeto detectado
+                font = cv.FONT_HERSHEY_DUPLEX
+                cv.putText(
+                    frame,
+                    result.names[int(box.cls[0])],
+                    (r[0] + 6, r[1] - 20),
+                    font,
+                    1.0,
+                    (0, 0, 0),
+                    1,
+                )
 
         # Exibir o frame capturado
         cv.imshow('Webcam', frame)
