@@ -8,8 +8,8 @@ model = YOLO("./yolov8n.pt")
 # Capturando o vídeo da câmera
 camera = cv.VideoCapture(0)
 
-height = int(cap.get(cv.CAP_PROP_FRAME_HEIGHT)) # Obtendo a altura do frame
-width = int(cap.get(cv.CAP_PROP_FRAME_WIDTH)) # Obtendo a largura do frame
+height = int(camera.get(cv.CAP_PROP_FRAME_HEIGHT)) # Obtendo a altura do frame
+width = int(camera.get(cv.CAP_PROP_FRAME_WIDTH)) # Obtendo a largura do frame
 
 # Definindo o codec e criando o objeto VideoWriter
 fourcc = cv.VideoWriter_fourcc(*'mp4v')
@@ -24,7 +24,7 @@ while True:
 
     # Exibindo o frame com as detecções
     cv.imshow('Webcam', detection[0].plot())
-    cv.video.write(detection[0].plot())
+    video.write(detection[0].plot())
 
     # Interrompendo o loop se a tecla 'q' for pressionada
     if cv.waitKey(1) & 0xFF == ord('q'):
