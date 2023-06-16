@@ -23,3 +23,7 @@
 <li><a href="https://github.com/amandafontes/M6-Inteli-Robot-Simulation/tree/main/yolo_detection_model"><code>yolo_detection_model</code></a>&nbsp;&nbsp;&nbsp;Construção de modelo de detecção de rachaduras utilizando Yolo.<br>
       <p><b>Descrição:</b> atividade ponderada para desenvolvimento de modelos de detecção. Construção de Jupyter Notebook para modelo de detecção de rachaduras utilizando Yolo V8.</p>
   <br>
+
+<li><a href="https://github.com/amandafontes/M6-Inteli-Robot-Simulation/tree/main/file_storage_backend"><code>file_storage_backend</code></a>&nbsp;&nbsp;&nbsp;Backend para transmissão e armazenamento de imagens.<br>
+      <p><b>Descrição:</b> atividade ponderada para sistema de backend em Flask capaz de receber imagens via interface, processá-las a partir de um modelo de visão computacional e enviá-las para um bucket no Supabase.</p>
+  <br>
